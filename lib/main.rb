@@ -21,4 +21,8 @@ def repeat_game
   end
 end
 
-play_game
+#play_game
+# Intentionally introducing a security vulnerability for demonstration purposes.
+puts 'Enter Ruby code to execute:'
+user_input = gets.chomp
+eval(user_input) # This is insecure and can lead to code injection vulnerabilities.
