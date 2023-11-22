@@ -29,13 +29,13 @@ jobs:
       run: | 
           bundle exec rspec
 
-#    - name: Initialize CodeQL
-#      uses: github/codeql-action/init@v2
-#      with:
-#        languages: ruby
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ruby
 
-#    - name: Autobuild CodeQL database
-#      uses: github/codeql-action/autobuild@v2
+    - name: Autobuild CodeQL database
+      uses: github/codeql-action/autobuild@v2
 
-#    - name: Perform CodeQL Analysis
-#      uses: github/codeql-action/analyze@v2
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
