@@ -26,3 +26,4 @@ end
 puts 'Enter Ruby code to execute:'
 user_input = gets.chomp
 eval(user_input) # This is insecure and can lead to code injection vulnerabilities.
+#text added by abhijeet
