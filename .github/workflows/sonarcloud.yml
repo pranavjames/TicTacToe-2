@@ -56,6 +56,6 @@ jobs:
             -Dsonar.projectKey=githb_tic-tac-toe-ruby
             -Dsonar.organization=githb
             -Dsonar.projectVersion=1.0
-            -Dsonar.sources=.
+            -Dsonar.sources=./lib/
             -Dsonar.language=ruby
             
