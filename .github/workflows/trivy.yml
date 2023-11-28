@@ -7,6 +7,10 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
     name: Build
     runs-on: ubuntu-20.04
     steps:
