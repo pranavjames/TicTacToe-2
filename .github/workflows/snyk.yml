@@ -22,7 +22,7 @@ jobs:
         with:
           args: --sarif-file-output=snyk.sarif
       - name: Print the files
-        run : ls -la
+        run : ls -R
         
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
