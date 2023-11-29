@@ -18,11 +18,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [java-kotlin]
+        language: [ruby]
 
     # Specify the container in which actions will run
     container:
-      image: codeql-container:f0f91db
+      image: ubuntu
+   #   image: codeql-container:f0f91db
 
     steps:
       - name: Checkout repository
