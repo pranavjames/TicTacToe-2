@@ -47,3 +47,6 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         languages: ruby
+
+    - name: See the Files
+      run: ls -laR
