@@ -34,7 +34,8 @@ jobs:
           languages: ${{ matrix.language }}
       - name: Build
         run: |
-          ./configure
-          make
+          bundle install
+          bundle exec rspec
+          
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
