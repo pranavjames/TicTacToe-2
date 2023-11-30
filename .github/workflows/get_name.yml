@@ -22,4 +22,4 @@ jobs:
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Get Name
-        run: hostname
+        run: cat /etc/os-release
