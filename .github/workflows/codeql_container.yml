@@ -34,7 +34,8 @@ jobs:
           
       - name: Set up Ruby
         run : |
-           apt-get install ruby-full
+           apt update
+           apt-get install ruby -y
         # uses: ruby/setup-ruby@v1
         # with:
         #   ruby-version: 2.7.1
