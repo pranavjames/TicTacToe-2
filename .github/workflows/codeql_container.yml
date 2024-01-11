@@ -31,9 +31,23 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
-      - name: Build
-        run: |
-          ./configure
-          make
+          
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.1
+
+      - name: Install dependencies
+        run: bundle install
+
+    # - name: Build Applications
+    #   run: |
+    #     ruby lib/main.rb
+        
+
+      - name: Run tests
+        run: | 
+          bundle exec rspec
+          
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
